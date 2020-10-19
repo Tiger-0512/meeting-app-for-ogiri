@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>大喜利おにぎり</title>
+    <!-- CSSの読み込み -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrapの読み込み -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Fontawesomeの読み込み -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/main.js"></script>
+
+  </head>
+    <style>
+    .room{
+      display: block;
+
+    }
+    video{
+      width:200px;
+    }
+  </style>
+  <body>
+    <header>
+      <nav class="navbar navbar-light">
+        <a href="#" class="navbar-brand">
+          <img src="images/onigiri.png"  alt="logo" class="pb-1">
+          <span>大喜利おにぎり</span>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <div id="times">
+          <span>残り時間</span><span id="timer"></span>
+          <div class="container">
+            <div id="timer"></div>
+          </div>
+      </div>
+      <div id="ogiri-title">
+        <h1></h1>
+        </div>
+      <div id="answer-text">
+        <div id="result_text"><pre id="output"></pre></div>
+      </div>
+      <button onclick="send()" id="start-btn" class="btn btn-primary mb-3">大喜利を始める</button>
+
+      <div class="answer-btn">
+        <button id="start_recognition" type="button" class="btn btn-primary">回答する</button>
+      </div>
+      <div class = "pon-btn">
+        <button id="pon_recognition" type="button">PON</button>
+      </div>
+      <div id="status">
+
+      </div>
+      <div class="container">
+	<span id="js-room-mode"></span>:
+        <input type="text" placeholder="Room Name" id="js-room-id">
+        <button id="js-join-trigger">Join</button>
+        <button id="js-leave-trigger">Leave</button>
+        <div class="room">
+
+          <div class="remote-streams" id="js-remote-streams">
+            <video id="js-local-stream"></video>
+	  </div>
+
+          <div>
+            <pre class="messages" id="js-messages"></pre>
+            <input type="text" id="js-local-text">
+            <button id="js-send-trigger">Send</button>
+          </div>
+        </div>
+        <p class="meta" id="js-meta"></p>
+      </div>
+    </main>
+    <script type="text/javascript" src="js/webspeech.js"></script>
+    <script type="text/javascript"  src="js/time.js"></script>
+    <script type="text/javascript"  src="js/main.js"></script>
+    <script src="//cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+    <script src="js/socket.js"></script>
+    <script src="js/key.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

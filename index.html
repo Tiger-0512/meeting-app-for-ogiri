@@ -1,0 +1,55 @@
+<!-- ver 2 -->
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>大喜利おにぎり</title>
+    <!-- CSSの読み込み -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Bootstrapの読み込み -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Fontawesomeの読み込み -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light">
+        <a href="/" class="navbar-brand">
+          <img src="images/onigiri.png"  alt="logo" class="pb-1">
+          <span>大喜利おにぎり</span>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <h1>みんなで大喜利</h1>
+
+      <div class="name-form">
+        <label>名前</label><input id="input_user_name" type="text" name="user_name" required>
+      </div>
+      
+      <div id="button-wrapper">
+        <button id="answer-btn" type="button" class="btn btn-primary" onclick="location.href='/main.html'">回答者として参加</button>
+        <button id="audience-btn" type="button" class="btn btn-primary" onclick="location.href='/main.html'">オーディエンスとして参加</button>
+      </div>
+
+      <div id="member">
+        <div class="answer-list">
+          <h2>回答者リスト</h2>
+          <ul>
+          </ul>
+        </div>
+        <div class="audience-list">
+          <h2>オーディエンスリスト</h2>
+          <ul>
+          </ul>
+        </div>
+      </div>
+      <div style="text-align:center;">
+        <button id="start-btn" type="button" class="btn btn-warning"><a href="main.html">はじめる</a></button>
+      </div>
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>

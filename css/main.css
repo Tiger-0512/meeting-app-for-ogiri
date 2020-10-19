@@ -1,0 +1,82 @@
+nav{
+  background-color: #ffcc00;
+  display: flex;
+}
+nav img{
+  width:30px;
+}
+
+
+/* main.html */
+video{
+  width:250px!important;
+}
+#main-header{
+
+  margin-top:30px;
+}
+#main-header h1{
+  margin:0;
+}
+#times{
+  text-align: center;
+  font-size:15px;
+  margin: 80px;
+  background-color: rgb(219, 219, 219);
+  border-radius: 20px;
+  margin: 30px;
+  padding: 10px;
+}
+#start-btn{
+  text-align: center;
+}
+#ogiri-title{
+  text-align: center;
+}
+#start-btn{
+  display: block;
+  width:300px;
+  margin:0 auto;
+}
+#answer-text{
+  border:3px solid #888;
+  border-radius:5px;
+  padding:30px;
+  width:80%;
+  margin:30px auto;
+}
+
+.face{
+  text-align: center;
+}
+.face img{
+  width:80%;
+}
+.answer-btn{
+  text-align: center;
+}
+#status{
+  width:100%;
+  text-align: center;
+  margin-top:10px;
+  font-size:14px;
+  color:#555;
+}
+
+.container {
+  padding-top:  2em;
+}
+.pon-btn{
+  text-align:center;
+  margin-top:20px;
+}
+#pon_recognition{
+  width:150px;
+  height:150px;
+  background:gold;
+  border-radius:100%;
+  border:none;
+}
+#pon_recognition:hover {
+  background: yellow;
+}

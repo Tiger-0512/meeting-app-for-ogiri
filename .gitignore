@@ -1,0 +1,5 @@
+.vscode
+node_modules
+chime
+/backend/websocket-get-problem/get-problem/*
+!/backend/websocket-get-problem/get-problem/lambda_function.py

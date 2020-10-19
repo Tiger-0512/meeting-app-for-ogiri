@@ -1,0 +1,56 @@
+nav{
+  background-color: #ffcc00;
+  display: flex;
+}
+nav img{
+  width:30px;
+}
+
+/* index.html */
+main h1{
+  text-align: center;
+  margin-top:100px;
+}
+#button-wrapper{
+  display: flex;
+  justify-content: space-around;
+  margin-top:100px;
+}
+
+#button-wrapper .btn{
+  padding:30px;
+  font-size:20px;
+}
+#member{
+  margin-top:100px;
+  display: flex;
+  justify-content: space-around;
+}
+.answer-list{
+  font-size:20px;
+}
+.audience-list{
+  font-size:20px;
+}
+
+/* main.html */
+#main-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top:30px;
+}
+#main-header h1{
+  margin:0;
+}
+#times{
+  font-size:20px;
+}
+
+.name-form{
+  margin-top:80px;
+  text-align: center;
+}
+.name-form label{
+  padding-right:20px;
+}
